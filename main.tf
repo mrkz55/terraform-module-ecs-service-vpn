@@ -38,7 +38,7 @@ resource "aws_ecs_task_definition" "service_task" {
 data "template_file" "service_task" {
   template = "${file("${path.module}/templates/service_task.json")}"
 
-  vars {
+  vars = {
     container_name   = "${lookup(var.config, "container_name", lookup(var.defaults, "container_name"))}"
     container_image  = "${lookup(var.config, "container_image", lookup(var.defaults, "container_image"))}"
     container_memory = "${lookup(var.config, "container_memory", lookup(var.defaults, "container_memory"))}"
