@@ -1,0 +1,277 @@
+2020/01/31 04:51:23 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:23 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:23 [INFO] CLI args: []string{"/usr/local/bin/terraform", "init"}
+2020/01/31 04:51:23 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:23 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:23 [INFO] CLI command args: []string{"init"}
+2020/01/31 04:51:23 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/01/31 04:51:23 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/01/31 04:51:23 [DEBUG] New state was assigned lineage "8529715a-fde6-fb8e-7138-df514dbaeb04"
+2020/01/31 04:51:23 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/01/31 04:51:23 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/01/31 04:51:23 [DEBUG] checking for provider in "."
+2020/01/31 04:51:23 [DEBUG] checking for provider in "/usr/local/bin"
+2020/01/31 04:51:23 [DEBUG] checking for provisioner in "."
+2020/01/31 04:51:23 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/01/31 04:51:23 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2020/01/31 04:51:23 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/01/31 04:51:23 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/01/31 04:51:23 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2020/01/31 04:51:23 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/01/31 04:51:23 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/01/31 04:51:23 [DEBUG] checking for provider in "."
+2020/01/31 04:51:23 [DEBUG] checking for provider in "/usr/local/bin"
+2020/01/31 04:51:23 [DEBUG] plugin requirements: "random"=""
+2020/01/31 04:51:23 [DEBUG] plugin requirements: "template"=""
+2020/01/31 04:51:23 [DEBUG] plugin requirements: "aws"=""
+2020/01/31 04:51:23 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2020/01/31 04:51:23 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2020/01/31 04:51:23 [DEBUG] fetching provider versions from "https://registry.terraform.io/v1/providers/-/random/versions"
+2020/01/31 04:51:23 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/-/random/versions
+2020/01/31 04:51:24 [DEBUG] fetching provider location from "https://registry.terraform.io/v1/providers/hashicorp/random/2.2.1/download/darwin/amd64"
+2020/01/31 04:51:24 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/random/2.2.1/download/darwin/amd64
+2020/01/31 04:51:24 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-random/2.2.1/terraform-provider-random_2.2.1_SHA256SUMS
+2020/01/31 04:51:24 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-random/2.2.1/terraform-provider-random_2.2.1_SHA256SUMS.sig
+2020/01/31 04:51:24 [DEBUG] verified GPG signature with key from HashiCorp Security <security@hashicorp.com>
+2020/01/31 04:51:24 [DEBUG] getting provider "random" (hashicorp/random) version "2.2.1"
+2020/01/31 04:51:24 [DEBUG] plugin cache is disabled, so downloading random 2.2.1 from https://releases.hashicorp.com/terraform-provider-random/2.2.1/terraform-provider-random_2.2.1_darwin_amd64.zip?checksum=sha256:072ce92b0138ee65df2e4e2e6e5f6632fa12a7e6453b91399bad89291855d426
+2020/01/31 04:51:24 [TRACE] HTTP client HEAD request to https://releases.hashicorp.com/terraform-provider-random/2.2.1/terraform-provider-random_2.2.1_darwin_amd64.zip
+2020/01/31 04:51:24 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-random/2.2.1/terraform-provider-random_2.2.1_darwin_amd64.zip
+2020/01/31 04:51:26 [DEBUG] looking for the random 2.2.1 plugin we just installed
+2020/01/31 04:51:26 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:26 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:26 [DEBUG] all plugins found discovery.PluginMetaSet{discovery.PluginMeta{Name:"random", Version:"2.2.1", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"}:struct {}{}}
+2020/01/31 04:51:26 [DEBUG] filtered plugins discovery.PluginMetaSet{discovery.PluginMeta{Name:"random", Version:"2.2.1", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"}:struct {}{}}
+2020/01/31 04:51:26 [DEBUG] fetching provider versions from "https://registry.terraform.io/v1/providers/-/template/versions"
+2020/01/31 04:51:26 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/-/template/versions
+2020/01/31 04:51:26 [DEBUG] fetching provider location from "https://registry.terraform.io/v1/providers/hashicorp/template/2.1.2/download/darwin/amd64"
+2020/01/31 04:51:26 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/template/2.1.2/download/darwin/amd64
+2020/01/31 04:51:26 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_SHA256SUMS
+2020/01/31 04:51:26 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_SHA256SUMS.sig
+2020/01/31 04:51:26 [DEBUG] verified GPG signature with key from HashiCorp Security <security@hashicorp.com>
+2020/01/31 04:51:26 [DEBUG] getting provider "template" (hashicorp/template) version "2.1.2"
+2020/01/31 04:51:26 [DEBUG] plugin cache is disabled, so downloading template 2.1.2 from https://releases.hashicorp.com/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_darwin_amd64.zip?checksum=sha256:e7c8f8506cee5fa28f842714857d412a2b09e61127a0efe2a164c2f3d9bf2619
+2020/01/31 04:51:26 [TRACE] HTTP client HEAD request to https://releases.hashicorp.com/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_darwin_amd64.zip
+2020/01/31 04:51:26 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_darwin_amd64.zip
+2020/01/31 04:51:28 [DEBUG] looking for the template 2.1.2 plugin we just installed
+2020/01/31 04:51:28 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:28 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:28 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:28 [DEBUG] all plugins found discovery.PluginMetaSet{discovery.PluginMeta{Name:"random", Version:"2.2.1", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"}:struct {}{}, discovery.PluginMeta{Name:"template", Version:"2.1.2", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4"}:struct {}{}}
+2020/01/31 04:51:28 [DEBUG] filtered plugins discovery.PluginMetaSet{discovery.PluginMeta{Name:"template", Version:"2.1.2", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4"}:struct {}{}}
+2020/01/31 04:51:28 [DEBUG] fetching provider versions from "https://registry.terraform.io/v1/providers/-/aws/versions"
+2020/01/31 04:51:28 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/-/aws/versions
+2020/01/31 04:51:29 [DEBUG] fetching provider location from "https://registry.terraform.io/v1/providers/hashicorp/aws/2.46.0/download/darwin/amd64"
+2020/01/31 04:51:29 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/2.46.0/download/darwin/amd64
+2020/01/31 04:51:29 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/2.46.0/terraform-provider-aws_2.46.0_SHA256SUMS
+2020/01/31 04:51:29 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/2.46.0/terraform-provider-aws_2.46.0_SHA256SUMS.sig
+2020/01/31 04:51:29 [DEBUG] verified GPG signature with key from HashiCorp Security <security@hashicorp.com>
+2020/01/31 04:51:29 [DEBUG] getting provider "aws" (hashicorp/aws) version "2.46.0"
+2020/01/31 04:51:29 [DEBUG] plugin cache is disabled, so downloading aws 2.46.0 from https://releases.hashicorp.com/terraform-provider-aws/2.46.0/terraform-provider-aws_2.46.0_darwin_amd64.zip?checksum=sha256:ebdee048a1234e879cfdbed8bb403c8a2134ce572c91c54a596f3e05bfc3385f
+2020/01/31 04:51:29 [TRACE] HTTP client HEAD request to https://releases.hashicorp.com/terraform-provider-aws/2.46.0/terraform-provider-aws_2.46.0_darwin_amd64.zip
+2020/01/31 04:51:29 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/2.46.0/terraform-provider-aws_2.46.0_darwin_amd64.zip
+2020/01/31 04:51:43 [DEBUG] looking for the aws 2.46.0 plugin we just installed
+2020/01/31 04:51:43 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:43 [DEBUG] all plugins found discovery.PluginMetaSet{discovery.PluginMeta{Name:"aws", Version:"2.46.0", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4"}:struct {}{}, discovery.PluginMeta{Name:"random", Version:"2.2.1", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"}:struct {}{}, discovery.PluginMeta{Name:"template", Version:"2.1.2", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4"}:struct {}{}}
+2020/01/31 04:51:43 [DEBUG] filtered plugins discovery.PluginMetaSet{discovery.PluginMeta{Name:"aws", Version:"2.46.0", Path:"/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4"}:struct {}{}}
+2020/01/31 04:51:43 [DEBUG] checking for provider in "."
+2020/01/31 04:51:43 [DEBUG] checking for provider in "/usr/local/bin"
+2020/01/31 04:51:43 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:43 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:43 [DEBUG] found valid plugin: "aws", "2.46.0", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:43 [DEBUG] found valid plugin: "random", "2.2.1", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:43 [DEBUG] found valid plugin: "template", "2.1.2", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:44 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:44 [DEBUG] found provider "terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:44 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:44 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:53 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:53 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:53 [INFO] CLI args: []string{"/usr/local/bin/terraform", "0.12upgrade"}
+2020/01/31 04:51:53 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:53 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:53 [INFO] CLI command args: []string{"0.12upgrade"}
+2020/01/31 04:51:53 [DEBUG] command: asking for input: "Would you like to upgrade the module in the current directory?"
+2020/01/31 04:51:55 [DEBUG] checking for provider in "."
+2020/01/31 04:51:55 [DEBUG] checking for provider in "/usr/local/bin"
+2020/01/31 04:51:55 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:55 [DEBUG] found provider "terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:55 [DEBUG] found provider "terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:55 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:55 [DEBUG] found valid plugin: "aws", "2.46.0", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4"
+2020/01/31 04:51:55 [DEBUG] found valid plugin: "random", "2.2.1", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4"
+2020/01/31 04:51:55 [DEBUG] found valid plugin: "template", "2.1.2", "/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4"
+2020/01/31 04:51:55 [DEBUG] checking for provisioner in "."
+2020/01/31 04:51:55 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/01/31 04:51:55 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2020/01/31 04:51:55 [TRACE] configupgrade: Analyzing "variables.tf"
+2020/01/31 04:51:55 [TRACE] configupgrade: Analyzing "main.tf"
+2020/01/31 04:51:55 [TRACE] Resource block for random_id.vpn requires provider "random"
+2020/01/31 04:51:55 [TRACE] Resource block for random_id.credentials requires provider "random"
+2020/01/31 04:51:55 [TRACE] Resource block for aws_ecs_service.vpn requires provider "aws"
+2020/01/31 04:51:55 [TRACE] Resource block for aws_ecs_task_definition.service_task requires provider "aws"
+2020/01/31 04:51:55 [TRACE] Resource block for data.template_file.service_task requires provider "template"
+2020/01/31 04:51:55 [TRACE] configupgrade: Analyzing "outputs.tf"
+2020/01/31 04:51:56 [TRACE] Fetching schema from provider "aws"
+2020-01-31T04:51:56.178+1000 [INFO]  plugin: configuring client automatic mTLS
+2020-01-31T04:51:56.205+1000 [DEBUG] plugin: starting plugin: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4 args=[/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4]
+2020-01-31T04:51:56.216+1000 [DEBUG] plugin: plugin started: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4 pid=94867
+2020-01-31T04:51:56.216+1000 [DEBUG] plugin: waiting for RPC address: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4
+2020-01-31T04:51:57.421+1000 [INFO]  plugin.terraform-provider-aws_v2.46.0_x4: configuring server automatic mTLS: timestamp=2020-01-31T04:51:57.421+1000
+2020-01-31T04:51:57.449+1000 [DEBUG] plugin: using plugin: version=5
+2020-01-31T04:51:57.450+1000 [DEBUG] plugin.terraform-provider-aws_v2.46.0_x4: plugin address: network=unix address=/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin750838238 timestamp=2020-01-31T04:51:57.449+1000
+2020/01/31 04:51:57 [TRACE] GRPCProvider: GetSchema
+2020/01/31 04:51:57 [TRACE] Fetching schema from provider "template"
+2020-01-31T04:51:57.548+1000 [INFO]  plugin: configuring client automatic mTLS
+2020-01-31T04:51:57.572+1000 [DEBUG] plugin: starting plugin: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4 args=[/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4]
+2020-01-31T04:51:57.575+1000 [DEBUG] plugin: plugin started: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4 pid=94872
+2020-01-31T04:51:57.575+1000 [DEBUG] plugin: waiting for RPC address: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4
+2020-01-31T04:51:57.754+1000 [INFO]  plugin.terraform-provider-template_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-01-31T04:51:57.754+1000
+2020-01-31T04:51:57.781+1000 [DEBUG] plugin.terraform-provider-template_v2.1.2_x4: plugin address: address=/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin197757071 network=unix timestamp=2020-01-31T04:51:57.780+1000
+2020-01-31T04:51:57.781+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:57 [TRACE] GRPCProvider: GetSchema
+2020/01/31 04:51:57 [TRACE] Fetching schema from provider "random"
+2020-01-31T04:51:57.835+1000 [INFO]  plugin: configuring client automatic mTLS
+2020-01-31T04:51:57.860+1000 [DEBUG] plugin: starting plugin: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4 args=[/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4]
+2020-01-31T04:51:57.864+1000 [DEBUG] plugin: plugin started: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4 pid=94873
+2020-01-31T04:51:57.864+1000 [DEBUG] plugin: waiting for RPC address: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4
+2020-01-31T04:51:58.122+1000 [INFO]  plugin.terraform-provider-random_v2.2.1_x4: configuring server automatic mTLS: timestamp=2020-01-31T04:51:58.121+1000
+2020-01-31T04:51:58.148+1000 [DEBUG] plugin.terraform-provider-random_v2.2.1_x4: plugin address: address=/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin744747932 network=unix timestamp=2020-01-31T04:51:58.148+1000
+2020-01-31T04:51:58.148+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] GRPCProvider: GetSchema
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "puppet"
+2020-01-31T04:51:58.202+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, puppet]
+2020-01-31T04:51:58.204+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94874
+2020-01-31T04:51:58.204+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "puppet"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "puppet"}
+puppet-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin puppet
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.236318+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin324757238","network":"unix"}
+2020-01-31T04:51:58.236+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "remote-exec"
+2020-01-31T04:51:58.237+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, remote-exec]
+2020-01-31T04:51:58.239+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94876
+2020-01-31T04:51:58.239+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "remote-exec"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "remote-exec"}
+remote-exec-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin remote-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.269482+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin913569320","network":"unix"}
+2020-01-31T04:51:58.269+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "salt-masterless"
+2020-01-31T04:51:58.271+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, salt-masterless]
+2020-01-31T04:51:58.273+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94878
+2020-01-31T04:51:58.273+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "salt-masterless"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "salt-masterless"}
+salt-masterless-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin salt-masterless
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.304515+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin008431602","network":"unix"}
+2020-01-31T04:51:58.304+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "chef"
+2020-01-31T04:51:58.305+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, chef]
+2020-01-31T04:51:58.308+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94880
+2020-01-31T04:51:58.308+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "chef"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "chef"}
+chef-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin chef
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.340476+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin778415588","network":"unix"}
+2020-01-31T04:51:58.340+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "file"
+2020-01-31T04:51:58.342+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, file]
+2020-01-31T04:51:58.344+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94882
+2020-01-31T04:51:58.344+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "file"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "file"}
+file-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin file
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.374959+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin422020990","network":"unix"}
+2020-01-31T04:51:58.375+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "habitat"
+2020-01-31T04:51:58.376+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, habitat]
+2020-01-31T04:51:58.378+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94884
+2020-01-31T04:51:58.378+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "habitat"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "habitat"}
+habitat-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin habitat
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.408451+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin185136480","network":"unix"}
+2020-01-31T04:51:58.408+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] Fetching schema from provisioner "local-exec"
+2020-01-31T04:51:58.410+1000 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-01-31T04:51:58.412+1000 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=94886
+2020-01-31T04:51:58.412+1000 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/01/31 04:51:58 [INFO] Terraform version: 0.12.16  
+2020/01/31 04:51:58 [INFO] Go runtime version: go1.13.4
+2020/01/31 04:51:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/01/31 04:51:58 [DEBUG] Attempting to open CLI config file: /Users/mark/.terraformrc
+2020/01/31 04:51:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/01/31 04:51:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/01/31 04:51:58 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-01-31T04:51:58.441770+10:00","address":"/var/folders/dj/x31qzlgn0rvd790s660vrvph0000gn/T/plugin879214578","network":"unix"}
+2020-01-31T04:51:58.442+1000 [DEBUG] plugin: using plugin: version=5
+2020/01/31 04:51:58 [TRACE] configupgrade: Working on "main.tf"
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading random_id.vpn at main.tf:1,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading random_id.credentials at main.tf:5,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading aws_ecs_service.vpn at main.tf:12,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading aws_ecs_task_definition.service_task at main.tf:30,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading data.template_file.service_task at main.tf:40,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Working on "outputs.tf"
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading output.output_map at outputs.tf:1,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Working on "variables.tf"
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.name at variables.tf:1,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.env at variables.tf:3,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.vpc at variables.tf:7,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.alb at variables.tf:11,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.cluster at variables.tf:15,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.cw at variables.tf:19,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.config at variables.tf:24,1-1
+2020/01/31 04:51:58 [TRACE] configupgrade: Upgrading var.defaults at variables.tf:29,1-1
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin process exited: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.46.0_x4 pid=94867
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin process exited: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4 pid=94873
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin process exited: path=/Users/mark/mrkz55/terraform-module-ecs-service-vpn/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4 pid=94872
+2020-01-31T04:51:58.455+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94880
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94878
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94884
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94886
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94882
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94874
+2020-01-31T04:51:58.458+1000 [DEBUG] plugin: plugin exited
+2020-01-31T04:51:58.459+1000 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=94876
+2020-01-31T04:51:58.459+1000 [DEBUG] plugin: plugin exited
